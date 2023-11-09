@@ -1,0 +1,60 @@
+.detail {
+    width: 90%;
+    margin: auto;
+    height: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-div {
+    width: 40%;
+    height: 100%;
+}
+
+.main-img {
+    height: 80%;
+}
+
+.img-arr {
+    height: 20%;
+    display: flex;
+}
+
+.imgs {
+    width: 33.33%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.description-div {
+    width: 55%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-brand h4 {
+    font-weight: 700;
+}
+
+
+.price {
+    color: blue;
+    font-weight: 700;
+}
+
+.price span {
+    font-size: 1rem;
+    color: green;
+}
+
+.stock {
+    color: green;
+}
+
+.description-div button {
+    border-radius: 0; 
+    font-weight: 700;
+    width: 40%;
+}

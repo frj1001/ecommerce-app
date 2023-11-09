@@ -1,0 +1,90 @@
+@media (min-width:1200px) and (max-width:1399px){
+    .filter {
+        font-size: 1.5vw;
+    }
+
+    .sorting-img img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .filter {
+        font-size: 1.5vw;
+    }
+
+    .sorting-img img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .accordion-body {
+        font-size: 1.3vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .filter {
+        font-size: 1.6vw;
+    }
+
+    .sorting-img img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .accordion-button {
+        font-size: 1.5vw;
+    }
+
+    .accordion-body {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .filter {
+        font-size: 2vw;
+    }
+
+    .sorting-img img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .accordion {
+        min-width: 120px
+    }
+
+    .accordion-button {
+        font-size: 1.9vw;
+    }
+
+    .accordion-body {
+        font-size: 1.9vw;
+    }
+}
+
+@media (min-width:360px) and (max-width:575px){
+    .filter {
+        font-size: 3vw;
+    }
+
+    .sorting-img img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .accordion {
+        min-width: 120px
+    }
+
+    .accordion-button {
+        font-size: 3vw;
+    }
+
+    .accordion-body {
+        font-size: 3vw;
+    }
+}

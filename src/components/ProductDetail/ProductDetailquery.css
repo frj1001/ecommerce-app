@@ -1,0 +1,80 @@
+@media (min-width:768px) and (max-width:991px){
+    .modal-content {
+        width: 130%;
+        margin-left: -15%;
+    }
+   
+    .detail {
+        height: 50vw;
+        width: 100%;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .modal-content {
+        width: 110%;
+        margin-left: -5%
+    }
+   
+    .detail {
+        height: 50vw;
+        width: 100%;
+    }
+
+    .description-div button {
+        border-radius: 0; 
+        font-weight: 700;
+        width: 60%;
+    }
+}
+
+@media (min-width:360px) and (max-width:575px){
+    .modal-content {
+        width: 100%;
+        margin-left: 0
+    }
+   
+    .detail {
+        height: 70vw;
+        width: 100%;
+    }
+
+    .title-brand h4 {
+        font-size: 4vw;
+    }
+
+    .title-brand div {
+        font-size: 3vw;
+    }
+
+    .description-div .price {
+        font-size: 3.5vw;
+    }
+
+    .price span {
+        font-size: 2.5vw;
+    }
+
+    .description-div .stock {
+        font-size: 3vw;
+    }
+
+    .description-div p {
+        font-size: 3vw;
+    }
+
+    .description-div button {
+        border-radius: 0; 
+        font-weight: 700;
+        font-size: 4vw;
+        width: 70%;
+    }
+    
+    .p-detail .btn-primary {
+        width: 20vw;
+        height: 7vw;
+        font-size: 2.5vw;
+    }
+
+
+}

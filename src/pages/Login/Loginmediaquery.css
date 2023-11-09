@@ -1,0 +1,34 @@
+@media (min-width:1200px) and (max-width:1399px){
+    .login {
+        height: 30vw;
+        width: 40%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .login {
+        height: 40vw;
+        width: 50%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .login {
+        height: 55vw;
+        width: 55%;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .login {
+        height: 65vw;
+        width: 65%;
+    }
+}
+
+@media (min-width:360px) and (max-width:575px){
+    .login {
+        height: 120vw;
+        width: 80%;
+    }
+}

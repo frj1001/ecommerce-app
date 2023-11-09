@@ -1,0 +1,65 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e7e9eb;
+    color: black;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-button {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lgn-btn {
+    width: 100px;
+}
+
+.cart-search {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-search form {
+    height: 40px;
+}
+
+.cart-img{
+    padding-top: 4px;
+    position: relative;
+  }
+
+.count-box{
+    position: absolute;
+    color: #e7e9eb;
+    right: -15%;
+    top: -8%;
+  }
+  
+.count {
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 80%;
+    font-size: 12px;
+    background-color: black;
+    text-align: center;
+  }
