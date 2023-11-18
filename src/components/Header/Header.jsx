@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { GlobalContext } from '../../MyContexts'
 import { useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
+import Cart from '../Cart/Cart'
 
 
 
@@ -12,8 +13,7 @@ import { useRef } from 'react'
 function Header({setSearchText, searchResults}) {
   
   const {login, setLogin} = useContext(GlobalContext)
-  const {cartCount} = useContext(GlobalContext)
-  const {cartItems} = useContext(GlobalContext)
+  
   const nav = useNavigate()
   const inputRef = useRef()
 
@@ -79,12 +79,7 @@ function Header({setSearchText, searchResults}) {
               Search
             </button>
           </form>
-          <div className='cart-img' onClick={()=>console.log(cartItems)}>
-            <div className="count-box">
-              <div className={cartCount!==0 ? "count" : "" }>{cartCount}</div>
-            </div>
-            <img src='https://img.icons8.com/windows/344/shopping-cart.png' height={25} width={25} alt='c-logo' />
-          </div>
+            <Cart/>
       </div>
     
 

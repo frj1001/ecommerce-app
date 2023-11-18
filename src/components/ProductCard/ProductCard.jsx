@@ -2,7 +2,11 @@ import React from 'react'
 import ProductDetail from '../ProductDetail/ProductDetail'
 import './ProductCardquery.css'
 
+
 function ProductCard({product}) {
+
+  
+
   
   if(product.images && product.images.length>0){
     return (

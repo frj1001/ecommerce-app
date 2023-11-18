@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState} from 'react';
 import './ProductDetail.css'
 import './ProductDetailquery.css'
 import { GlobalContext } from '../../MyContexts';
@@ -8,10 +8,9 @@ function ProductDetail({product}) {
     const [detail, setDetail] = useState({})
     const [currentImage, setCurrentImage] = useState(null)
     const [mainImg, setMainImg] = useState(null)
-    const {cartCount, setCartCount} = useContext(GlobalContext)
-    const {cartItems, setCartItems} = useContext(GlobalContext)
     
-    
+    const {addToCart} = useContext(GlobalContext)
+        
     // Function to set the main image in product details
     const handleClick = (product)=> {
         setDetail(product)
@@ -21,8 +20,7 @@ function ProductDetail({product}) {
 
     // Function to set product count in cart on add to cart button
     const handleCart = (product) => {
-        setCartCount(cartCount+1)
-        setCartItems(cartItems.concat(product))
+        addToCart(product)
     }
 
     // Display main image based on small images click

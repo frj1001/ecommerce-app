@@ -13,6 +13,7 @@ import { GlobalContext } from './MyContexts';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 function App() {
   const [login, setLogin] = useState(localStorage.getItem('login') || "logged-out") //getting login from localstorage
   const [searchText, setSearchText] = useState("")
@@ -22,7 +23,7 @@ function App() {
   const [items, setItems] = useState([])
   const [cartCount, setCartCount] = useState(0)
   const [cartItems, setCartItems] = useState([])
-
+  
 
   useEffect(() => {
     // Api fetching to get categories of products
@@ -54,14 +55,38 @@ function App() {
 
   console.log(searchResults)
 
+  // Add to Cart button Functionality
+  const addToCart = (product) => {
+    setCartCount((prevCount) => prevCount + 1);
+
+    // Check if the product is already in the cart
+    const existingProduct = cartItems.find((item) => item.id === product.id);
+
+    if (existingProduct) {
+        // If the product is already in the cart, update its count
+        setCartItems((prevItems) =>
+            prevItems.map((item) =>
+                item.id === product.id ? { ...item, count: item.count + 1 } : item
+            )
+        );
+    } else {
+        // If the product is not in the cart, add it with count 1
+        setCartItems((prevItems) => [...prevItems, { ...product, count: 1 }]);
+    }
+};
+
   return (
     <div>
       {/* Wrapping all context in global context provider to manage props drilling and state lifting */}
       <GlobalContext.Provider value={{ 
         login, setLogin,
-        cartCount, setCartCount,
-        cartItems, setCartItems,
-        currentPage, setCurrentPage
+        cartCount, 
+        setCartCount,
+        cartItems, 
+        setCartItems,
+        addToCart,
+        currentPage, setCurrentPage,
+        
          }}>
           <Header setSearchText={setSearchText} searchResults={searchResults} />
         <Routes>

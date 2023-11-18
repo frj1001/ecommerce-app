@@ -43,23 +43,4 @@
     height: 40px;
 }
 
-.cart-img{
-    padding-top: 4px;
-    position: relative;
-  }
 
-.count-box{
-    position: absolute;
-    color: #e7e9eb;
-    right: -15%;
-    top: -8%;
-  }
-  
-.count {
-    width: 15px;
-    border: 1px solid black;
-    border-radius: 80%;
-    font-size: 12px;
-    background-color: black;
-    text-align: center;
-  }
