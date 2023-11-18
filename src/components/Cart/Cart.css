@@ -23,7 +23,6 @@
     width: 98%;
     height: 200px;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
@@ -31,13 +30,11 @@
 .cartitem-img {
     width: 40%;
     height: 100%;
-    border: 1px solid black;
 }
 
 .cartitem-detail {
     width: 55%;
     height: 100%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
